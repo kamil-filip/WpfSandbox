@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="MyFriendViewer.Controls.FooterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="400">
+    <StackPanel Orientation="Horizontal" Margin="5" >
+        <TextBlock Foreground="White" >
+            Friends: <Run Text="{Binding Friends.Count, Mode=OneWay}"/>
+        </TextBlock>
+        <TextBlock Foreground="LightGray" Text="Created by Kamil Filip Kozlowski, 2019" Margin="40 0 0 0"/>
+
+    </StackPanel>
+</UserControl>
